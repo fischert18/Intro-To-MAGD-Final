@@ -94,8 +94,9 @@ function dStand() {
 
 function draw() {
   background(30, 145, 50);
-  let x = random(0, 51);
+  hitCard = random(deck)
   for (let card of deck){
     card.printDeck();
   }
+  hitCard.pHit();
 }
