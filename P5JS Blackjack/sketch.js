@@ -1,4 +1,4 @@
-let gameEnd = false
+let gameEnd = false;
 let deck = [];
 let suit = 'unknown';
 let rank = 0;
@@ -25,7 +25,7 @@ class Card {
   pHit() {
   drawCard(playerX, 350, this.rank, this.suit, this.value);
   playerScore += this.value;
-  playerX += 90
+  playerX += 90;
   //print(`${playerScore}`);
   }
   
@@ -177,7 +177,7 @@ function dStand() {
   text("Push", 0, 0);
   pop();
   }
-  gameEnd = true
+  gameEnd = true;
 }
  
 //input rank and suit of card, and return the index of card in deck
@@ -190,7 +190,7 @@ function deckIndexLoop(rank, suit){
       return i;
     }
     else {
-      i++
+      i++;
     }
   }
   
